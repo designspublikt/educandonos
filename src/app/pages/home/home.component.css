@@ -1,0 +1,183 @@
+
+header {
+	height: 100vh;
+	background-image: url('../../../assets/img/home/header.jpg');
+	background-size: cover;
+	background-position: fixed;
+}
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+
+/* Servicios */
+.section-services {
+	padding: 3rem 0;
+}
+	.services-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 4rem 0;
+	}
+		
+		.services-content .head,
+		.services-content .content-info {
+			text-align: justify;
+		}
+		.services-content .content-info .service {
+			display: flex;
+			padding: 2rem 3rem;
+			gap: 2rem;
+		}
+			.content-info .service .icon img {
+				width: 250px;
+			}
+
+/* About Us */
+.section-about-us {
+	background-color: #f1f1f1;
+	padding: 7rem 0 4rem 0;
+}
+	.about-us-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		padding-top: 3rem;
+	}
+		.about-us-content .video iframe {
+			border-radius: .8rem;
+		}
+
+/* Valores */
+	.values {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 2rem;
+		padding: 4rem;
+	}
+		.value {
+			color: var(--black);
+		}
+			.value .icon img {
+				width: 150px;
+			}
+
+/* Cursos */
+.section-courses {
+	padding: 4rem 0 3rem 0;
+	background-color: #f1f1f1;
+}
+	.courses {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+		.course-card {
+			margin: 2rem 0;
+			background-color: #ffffff;
+			border-radius: .5rem;
+			overflow: hidden;
+			color: var(--black);
+			min-height: 450px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			cursor: pointer;
+		}
+
+			.course-card-header {
+				position: relative;
+			}
+			.course-card:hover .course-card-header::after {
+				top: 0;
+			}
+			.course-card-header::after {
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background-color: var(--second-color);
+				filter: opacity(.5);
+				transition: all .4s ease-in-out;
+				z-index: 4;
+				top: -100%;
+				left: 0;
+				right: 0;
+			}
+			.course-card-header img {
+				transition: all .3s ease-in-out;
+			}
+
+			.course-card-content {
+				padding: 2rem 1rem;
+			}	
+				.course-card-content .text-description {
+					font-size: .8rem;
+				}
+			.course-card-footer {
+				padding: .4rem 0;
+				background-color: var(--second-color);
+				color: var(--white);
+				transition: all .2s ease-in-out;
+				cursor: pointer;
+			}
+			.course-card-footer:hover {
+				background-color: var(--second-color-transparent);
+				color: var(--black);
+			}
+
+/* Testimonios */
+.section-testimonios {
+	background-image: url('../../../assets/img/home/testimonials/bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 3rem 0;
+}
+	.swiper {
+		height: 350px;
+	}
+		.swiper .swiper-pagination {
+			display: flex;
+			gap: .8rem;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+		}
+
+		.swiper .testimonio {
+			display: flex;
+			gap: 1.5rem;
+			padding: 1rem 0;
+			max-width: 1000px;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+		}
+			.testimonio .picture img {
+				border-radius: 50%;
+				width: 150px;
+			}
+
+/* Contacto */
+.section-contacto {
+	background-image: url('../../../assets/img/home/contacto/bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 3rem 0;
+	height: 85vh;
+}
+	.section-contacto .info {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+	}

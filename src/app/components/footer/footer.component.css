@@ -1,0 +1,58 @@
+footer {
+	background-color: var(--second-color);
+	padding: 2rem 0;
+	position: relative;
+}
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 0 3rem 0;
+	}
+		.logo {
+			max-width: 90px;
+		}
+		.description {
+			padding: 2rem;
+			max-width: 500px;
+			text-align: justify;
+			text-align-last: center;
+		}
+			.description * {
+				font-size: .8rem;
+			}
+		
+		.contact {
+			padding-top: 1rem;
+		}
+			.contact * {
+				padding: 0;
+			}
+
+		.social-networks {
+			max-width: 500px;
+			display: flex;
+			gap: 2rem;
+			padding-top: 1rem;
+		}	
+			.social-networks i {
+				font-size: 2rem;
+				color: var(--black);
+				transition: all .2s ease-in-out;
+			}
+			.social-networks i:hover {
+				color: var(--white);
+			}
+	
+
+	.footer-copyright {
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		width: 100%;
+		background-color: rgba(0,0,0,0.1);
+	}
