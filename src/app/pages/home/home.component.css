@@ -3,7 +3,8 @@ header {
 	height: 100vh;
 	background-image: url('../../../assets/img/home/header.jpg');
 	background-size: cover;
-	background-position: fixed;
+	background-position: center;
+	background-attachment: fixed;
 }
 	.header-content {
 		display: flex;
@@ -11,58 +12,137 @@ header {
 		justify-content: center;
 		height: 100%;
 	}
+	@media screen and (max-width: 768px) {
+		.header-content {
+			text-align: center;
+		}
+	}
 
 /* Servicios */
 .section-services {
 	padding: 3rem 0;
 }
+@media screen and (max-width: 768px) {
+	.section-services {
+		padding-top: 76px;
+	}
+}
 	.services-content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 1rem;
-		padding: 4rem 0;
+		flex-wrap: wrap;
 	}
-		
+		.services-content .services-box {
+			padding: 1rem;
+		}
+		@media screen and (max-width: 768px) {
+			.services-content .services-box {
+				padding: 0;
+			}
+		}
+
+		.services-content .head {
+			padding: 1rem;
+		}
+
 		.services-content .head,
 		.services-content .content-info {
 			text-align: justify;
 		}
+		@media screen and (max-width: 768px) {
+			.services-content .head {
+				text-align: center;
+			}
+		}
 		.services-content .content-info .service {
 			display: flex;
+			flex-wrap: wrap;
 			padding: 2rem 3rem;
-			gap: 2rem;
 		}
-			.content-info .service .icon img {
-				width: 250px;
+		@media screen and (max-width: 768px) {
+			.services-content .content-info .service {
+				padding: 1rem 0;
 			}
+		}
+			.content-info .service .icon {
+				text-align: center;
+			}
+				.content-info .service .icon img {
+					width: 250px;
+				}
+				@media screen and (max-width: 768px) {
+					.content-info .service .icon img {
+						width: 100px;
+					}
+					.content-info .service .description {
+						text-align: center;
+					}
+				}
 
 /* About Us */
 .section-about-us {
 	background-color: #f1f1f1;
 	padding: 7rem 0 4rem 0;
 }
+@media screen and (max-width: 768px) {
+	.section-about-us {
+		padding-top: 76px;
+	}
+}
 	.about-us-content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 3rem;
 		padding-top: 3rem;
+		flex-wrap: wrap;
+	}
+	.about-us-box {
+		padding: 1rem;
 	}
 		.about-us-content .video iframe {
 			border-radius: .8rem;
+			height: 380px;
+		}
+		@media screen and (max-width: 768px) {
+			.about-us-content .video iframe {
+				order: 1;
+				height: 150px;
+			}
+			.about-us-content .description {
+				order: 2;
+			}
 		}
 
 /* Valores */
+	@media screen and (max-width: 768px) {
+		.section-mision-vision-values {
+			padding-top: 74px;
+		}
+	}
+
 	.values {
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
-		gap: 2rem;
+		flex-wrap: wrap;
+		gap: 1rem;
 		padding: 4rem;
 	}
+	@media screen and (max-width: 768px) {
+		.values {
+			padding: 1rem;
+		}
+	}
 		.value {
+			flex: 1 calc(33.3% - 1rem);
+			padding: 1rem;
 			color: var(--black);
+		}
+		@media screen and (max-width: 768px) {
+			.value {
+				flex: 0 100%;
+			}
 		}
 			.value .icon img {
 				width: 150px;
@@ -72,6 +152,12 @@ header {
 .section-courses {
 	padding: 4rem 0 3rem 0;
 	background-color: #f1f1f1;
+}
+@media screen and (max-width: 768px) {
+	.section-courses {
+		padding: 1rem;
+		padding-top: 76px;
+	}
 }
 	.courses {
 		display: flex;
@@ -91,6 +177,11 @@ header {
 			flex-direction: column;
 			justify-content: space-between;
 			cursor: pointer;
+		}
+		@media screen and (max-width: 768px) {
+			.course-card {
+				min-height: auto;
+			}
 		}
 
 			.course-card-header {
@@ -141,8 +232,19 @@ header {
 	background-attachment: fixed;
 	padding: 3rem 0;
 }
+@media screen and (max-width: 768px) {
+	.section-testimonios {
+		padding: 3rem 1rem;
+		padding-top: 76px;
+	}
+}
 	.swiper {
 		height: 350px;
+	}
+	@media screen and (max-width: 768px) {
+		.swiper {
+			height: 220px;
+		}
 	}
 		.swiper .swiper-pagination {
 			display: flex;
@@ -150,6 +252,11 @@ header {
 			flex-direction: column;
 			justify-content: center;
 			align-items: flex-end;
+		}
+		@media screen and (max-width: 768px) {
+			.swiper .swiper-pagination {
+				flex-direction: row;
+			}
 		}
 
 		.swiper .testimonio {
@@ -173,6 +280,11 @@ header {
 	background-attachment: fixed;
 	padding: 3rem 0;
 	height: 85vh;
+}
+@media screen and (max-width: 768px) {
+	.section-contacto {
+		padding-top: 76px;
+	}
 }
 	.section-contacto .info {
 		display: flex;

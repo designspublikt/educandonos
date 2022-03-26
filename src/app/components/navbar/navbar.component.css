@@ -12,6 +12,27 @@
 	width: 100%;
 	z-index: 4;
 }
+@media screen and (max-width: 768px) {
+	.navbar {
+		top: 3%;
+		padding: .5rem 1rem;
+		background-color: rgba(0,0,0,0.75);
+
+	}
+}
+
+	.navbar-toggler:focus {
+		border: none;
+		box-shadow: none;
+	}
+		.navbar-toggler-bar {
+			height: 4px;
+			margin: 4px 0;
+			width: 35px;
+			border-radius: 5px;
+			background-color: #fff;
+			transition: all .3s ease-in-out;
+		}
 
 
 .fixed {
@@ -33,7 +54,11 @@
 	.nav-link {
 		color: var(--second-color);
 		font-weight: 700;
-		
+	}
+	@media screen and (max-width: 768px) {
+		.nav-link {
+			text-align: center;
+		}
 	}
 	.fixed .nav-link {
 		color: #fff;
