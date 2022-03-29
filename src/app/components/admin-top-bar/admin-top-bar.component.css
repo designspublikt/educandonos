@@ -1,0 +1,43 @@
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	height: 100%;
+}
+	.topbar .logo img {
+		width: 75px;
+	}
+	@media screen and (max-width: 768px) {
+		.topbar .logo img {
+			width: 85%;
+		}
+	}
+	.topbar .options {
+		display: flex;
+	}
+		.topbar .options .opt {
+			padding: .8rem;
+			margin: 0 .5rem;
+			height: 2.5rem;
+			width: 2.5rem;
+			border-radius: 50%;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			transition: all .2s ease-in-out;
+		}
+		.topbar .options .opt:hover {
+			border: 1px solid white;
+			background-color: transparent;
+		}
+		.topbar .options .opt:hover i {
+			color: #fff;
+		}
+		.topbar .options .opt i {
+			font-size: 1rem;
+			color: var(--second-color);
+			transition: all .2s ease-in-out;
+		}

@@ -1,1 +1,23 @@
-<p>login works!</p>
+<section class="section-login">
+	<div class="login-box">
+		<form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
+			<img class="logo" src="assets/img/logo/logo.png" alt="Educandonos Logo">
+			<h6 class="title">Plataforma Administrativa</h6>
+			<div class="form-group">
+				<img class="icon-input" src="assets/img/admin/login/username.png" alt="user icon">
+				<input	type="text"
+							class="form-control"
+							formControlName="username">
+			</div>
+			<div class="form-group">
+				<img class="icon-input" src="assets/img/admin/login/password.png" alt="pass icon">
+				<input	type="password"
+							class="form-control"
+							formControlName="password">
+			</div>
+			<div class="button-box">
+				<button class="btn btn-second btn-block w-100">Ingresar</button>
+			</div>
+		</form>
+	</div>
+</section>

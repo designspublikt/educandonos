@@ -1,0 +1,62 @@
+.section-login {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--main-color);
+	background: linear-gradient(135deg, var(--main-color) -50%, var(--second-color) 150%);
+}
+@media screen and (max-width: 768px) {
+	.section-login {
+		padding: 1rem;
+	}
+}
+	.section-login .login-box {
+		max-width: 500px;
+		max-height: 100vh;
+		padding: 3rem;
+		border-radius: 7px;
+		background-color: rgba(255, 255, 255, .9);
+	}
+	@media screen and (max-width: 768px) {
+		.section-login .login-box {
+			padding: 2rem;
+		}
+	}
+		.section-login .login-box .logo {
+			width: 80px;
+			padding-bottom: 1rem;
+		}
+
+		.section-login .login-box .form .form-group {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: .3rem .5rem;
+			border-bottom: 1px solid var(--second-color);
+			margin: 1rem auto;
+			max-width: 80%;
+		}
+		@media screen and (max-width: 768px) {
+			.section-login .login-box .form .form-group {
+				max-width: 100%;
+			}
+		}
+			.section-login .login-box .form .form-group .form-control {
+				border: none;
+				font-size: .8rem;
+				margin: 0 1rem;
+				background-color: transparent;
+				text-align: center;
+			}
+			.section-login .login-box .form .form-group .form-control:focus {
+				box-shadow: none;
+			}
+
+		.section-login .login-box .form .icon-input {
+			width: 20px;
+		}
+
+		.section-login .login-box .form button {
+			border-radius: 4px;
+		}

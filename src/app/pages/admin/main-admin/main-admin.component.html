@@ -1,1 +1,14 @@
-<p>main-admin works!</p>
+<section class="section-main-admin" [ngClass]="{'section-main-admin-show':sidebar}">
+	<div class="show-sidebar-btn mobile" [ngClass]="{'left':sidebar}" (click)="showSideBar()">
+		<i class="fa-solid fa-circle-right"></i>
+	</div>
+	<div class="top-bar">
+		<app-admin-top-bar></app-admin-top-bar>
+	</div>
+	<div class="side-bar">
+		<app-admin-side-bar></app-admin-side-bar>
+	</div>
+	<div class="content">
+		<router-outlet></router-outlet>
+	</div>
+</section>
