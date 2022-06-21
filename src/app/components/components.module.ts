@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ImageCropperModule } from 'ngx-image-cropper';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { SwiperModule } from 'swiper/angular';
 import { AdminSideBarComponent } from './admin-side-bar/admin-side-bar.component';
@@ -25,7 +26,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     NgxTypedJsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ImageCropperModule
   ],
   exports: [
     NavbarComponent,

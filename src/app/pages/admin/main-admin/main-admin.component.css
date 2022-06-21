@@ -60,11 +60,7 @@
 	.section-main-admin .side-bar {
 		grid-column: 1 / 2;
 		grid-row: 2 / -1;
-	}
-	@media screen and (max-width: 768px) {
-		.section-main-admin .side-bar {
-			padding-top: 3rem;
-		}
+		padding-top: 3rem;
 	}
 	.section-main-admin .content {
 		grid-column: 2 / -1;

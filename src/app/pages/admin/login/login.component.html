@@ -7,16 +7,18 @@
 				<img class="icon-input" src="assets/img/admin/login/username.png" alt="user icon">
 				<input	type="text"
 							class="form-control"
+							placeholder="usuario"
 							formControlName="username">
 			</div>
 			<div class="form-group">
 				<img class="icon-input" src="assets/img/admin/login/password.png" alt="pass icon">
 				<input	type="password"
 							class="form-control"
+							placeholder="contraseña"
 							formControlName="password">
 			</div>
 			<div class="button-box">
-				<button class="btn btn-second btn-block w-100">Ingresar</button>
+				<button class="btn btn-second btn-block w-100" [routerLink]="['/admin']">Ingresar</button>
 			</div>
 		</form>
 	</div>

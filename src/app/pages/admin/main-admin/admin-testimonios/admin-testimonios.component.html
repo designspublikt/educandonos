@@ -1,1 +1,52 @@
-<p>admin-testimonios works!</p>
+<section class="section-admin-testimonios">
+	<h5 class="title">Gestión de Testimonios</h5>
+	<form class="testimonio-form" [formGroup]="testimonioForm" (ngSubmit)="addTestimonio()">
+
+		<div class="image-cropper-modal" [ngClass]="{'show':showImageCropperModal}">
+			<div class="cropper-content">
+				<image-cropper	[imageChangedEvent]="imageCropperSrc"
+									[maintainAspectRatio]="true"
+									[aspectRatio]="4/4"
+									[format]="'jpeg'"
+									[roundCropper]="true"
+									(imageCropped)="cropImage($event)">
+				</image-cropper>
+				<button type="btn" class="btn btn-first" (click)="closeCropper()">Guardar Ajustes</button>
+			</div>
+		</div>
+
+		<div class="form-group col-12 col-sm-6">
+			<div class="form-group">
+				<label for="profilePic"><p>Imagen de Perfil</p></label>
+				<input	id="profilePic"
+							class="form-control"
+							type="file"
+							(change)="changeImage($event)">
+			</div>
+		</div>
+
+		<div class="form-group image-preview-group col-12 col-sm-6">
+			<div class="image-preview">
+				<img [src]="imageDestinationSrc">
+			</div>
+		</div>
+
+		<div class="form-group col-12">
+			<label for="name"><p>Nombre</p></label>
+			<input	id="name"
+						class="form-control"
+						type="text">
+		</div>
+
+		<div class="form-group col-12">
+			<label for="testimonial"><p>Reseña</p></label>
+			<textarea	id="testimonial"
+							rows="5"
+							class="form-control"></textarea>
+		</div>
+
+		<div class="form-group col-12 py-3 text-center">
+			<button class="btn btn-first">Guardar Testimonio</button>
+		</div>
+	</form>
+</section>

@@ -1,0 +1,55 @@
+* {
+	color: var(--black);
+}
+	.section-admin-testimonios {
+		padding-top: 3rem;
+	}
+		.testimonio-form {
+			padding: 1rem;
+			max-width: 600px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+			.testimonio-form .form-group {
+				padding: .5rem 0;
+				text-align: left;
+			}
+			.testimonio-form .form-control {
+				font-size: .8rem;
+			}
+
+		.testimonio-form .image-cropper-modal {
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.8);
+			z-index: 3;
+			width: 100%;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			display: none;
+		}
+			.image-cropper-modal.show {
+				display: flex!important;
+			}
+			.image-cropper-modal .cropper-content {
+				width: 500px;
+				max-width: 1200px;
+				max-height: 1000vh;
+			}
+
+		
+		.testimonio-form .image-preview-group {
+			padding: 1rem;
+		}
+			.testimonio-form .image-preview {
+				max-width: 200px;
+				max-height: 200px;
+				margin: 0 auto;
+				border-radius: 50%;
+				overflow: hidden;
+			}
