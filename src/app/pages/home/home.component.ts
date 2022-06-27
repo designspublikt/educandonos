@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.testimonios.length = 5;
-    this.safeUrl = this._Sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/aQlkVB9LZPk');
+    this.safeUrl = this._Sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/rL0hIFWL1Qg?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0');
     const swiper = new Swiper('.swiper');
   }
 
